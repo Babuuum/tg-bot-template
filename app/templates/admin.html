@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Admin · {{ bot_username }}</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 p-8">
+  <main class="mx-auto max-w-xl bg-white shadow rounded-2xl p-6 space-y-2">
+    <h1 class="text-2xl font-bold mb-4">Админ-панель</h1>
+    <p><b>Бот:</b> @{{ bot_username }}</p>
+    <p><b>Webhook:</b> {{ webhook_url }}</p>
+    <p><b>Всего пользователей:</b> {{ total_users }}</p>
+  </main>
+</body>
+</html>
